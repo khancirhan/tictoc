@@ -24,6 +24,8 @@ document.getElementById("restart-btn").addEventListener("click", function() {
 function init() {
   setToDefault();
 
+  activePlayer = "X";
+
   scoreX = 0;
   score0 = 0;
   tie = 0;
@@ -37,8 +39,6 @@ function init() {
 
 function setToDefault() {
   gamePlaying = true;
-
-  activePlayer = "X";
 
   // initialize the board contents to null
   board = [["", "", ""], ["", "", ""], ["", "", ""]];
